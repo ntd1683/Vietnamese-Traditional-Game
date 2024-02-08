@@ -45,8 +45,6 @@
     <!-- STYLES -->
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- FontAwesome -->
-    <link href="css/fontawesome.min.css" rel="stylesheet">
     <link href="css/all.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
@@ -256,11 +254,18 @@
         </div>
     </div>
 </div>
+<button id="toggleButton">
+    <i class="fas fa-play-circle" id="play_music"></i>
+    <i class="fas fa-pause-circle hidden" id="pause_music"></i>
+</button>
+<audio id="audioPlayer" src="assets/musics/music.mp3" loop></audio>
 <script src="./script.js"></script>
 <!-- //// SCRIPTS //// -->
 <script src="js/jquery-3.4.0.min.js"></script>
 <script src="js/blazy.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/arsnl.js"></script>
+<!-- FontAwesome -->
+<script src="https://kit.fontawesome.com/3e5386a9e5.js" crossorigin="anonymous"></script>
 </body>
 </html>

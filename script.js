@@ -70,9 +70,12 @@ function reloadHistory() {
 
 document.addEventListener('DOMContentLoaded', function () {
     reloadHistory();
-    elContent.classList.add("hidden");
-    // elContentRollDice.classList.add("hidden");
-    // elRollAdd.classList.add("hidden");
+    elContentRollDice.classList.add("hidden");
+    elRollAdd.classList.add("hidden");
+
+    if (getCookie('cookies-notification') !== "") {
+        elCookie.classList.add("hidden");
+    }
 });
 
 const elDiceOne = document.getElementById('dice1');
@@ -83,6 +86,9 @@ const elDeleteHistory = document.getElementById('delete_history');
 const elContent = document.getElementById('container_content');
 const elContentRollDice = document.getElementById('container_roll_dice');
 const elRollAdd = document.getElementById('container_additional');
+
+const elCookie = document.getElementById("cookies");
+const elCookieBtnClose = document.getElementById("cookies-close");
 
 elComeOut.onclick = async function () {
     let result = await rollDiceNumTimes(10);
@@ -108,6 +114,11 @@ elDeleteHistory.addEventListener("click", () => {
     removeCookie('history');
     reloadHistory();
     alert("Xóa lịch sử thành công!");
+});
+
+elCookieBtnClose.addEventListener("click", () => {
+    elCookie.classList.add("hidden");
+    setCookie('cookies-notification', 'true', 30);
 });
 
 async function rollDiceNumTimes(num) {
@@ -146,3 +157,23 @@ function rollDice() {
 
     return [diceOne, diceTwo, diceThree];
 }
+
+const toggleButton = document.getElementById('toggleButton');
+const audioPlayer = document.getElementById('audioPlayer');
+const audioPlay = document.getElementById('play_music');
+const audioPause = document.getElementById('pause_music');
+
+function toggleAudio() {
+    if (audioPlayer.paused) {
+        audioPlayer.play();
+        audioPause.classList.remove("hidden");
+        audioPlay.classList.add("hidden");
+    } else {
+        audioPlayer.pause();
+        audioPlay.classList.remove("hidden");
+        audioPause.classList.add("hidden");
+    }
+}
+
+// Gán sự kiện click cho nút
+toggleButton.addEventListener('click', toggleAudio);
