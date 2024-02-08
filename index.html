@@ -1,92 +1,263 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - Roll dice! </title>
-  <link rel="stylesheet" href="./style.css">
+    <!-- META TAGS -->
+    <meta charset="utf-8">
+    <meta name="author" content="AtypicalThemes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 
+    <!-- WEBSITE TITLE & DESCRIPTION -->
+    <title>AVG TEAM - Vietnamese Traditional Game</title>
+    <meta name="description" content="Vietnamese Traditional Game">
+    <meta name="keywords"
+          content="game, landing page, gaming, business, vietnam, roll-dice, baucuatomca, baucua, bầu cua, bau cua, game ngay tet">
+
+    <!-- OG meta tags that improve the look of your post on social media -->
+    <meta property="og:site_name" content="Vietnamese Traditional Game"/>
+    <!--website name-->
+    <meta property="og:site" content="Vietnamese Traditional Game"/>
+    <!--website link-->
+    <meta property="og:title" content="Vietnamese Traditional Game"/>
+    <!--Post title-->
+    <meta property="og:description" content="Vietnamese Traditional Game"/>
+    <!--Post description-->
+    <meta property="og:image" content="https://ntd-dev.tech/vietnamese-traditional-game/assets/images/logo.png"/>
+    <!-- Image link (jpg only)-->
+    <meta property="og:url" content="https://ntd-dev.tech/vietnamese-traditional-game"/>
+    <!--where do you want your post to link to-->
+    <meta property="og:type" content="website"/>
+
+    <!-- Favicon and Apple Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+
+    <!-- STYLES -->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div class="game">
-    <div class="container">
-      <div id='dice1' class="dice dice-one">
-        <div id="dice-one-side-one" class='side one'>
-          <img src="" alt="">
-        </div>
-        <div id="dice-one-side-two" class='side two'>
-          <div class="dot two-1"></div>
-          <div class="dot two-2"></div>
-        </div>
-        <div id="dice-one-side-three" class='side three'>
-          <div class="dot three-1"></div>
-          <div class="dot three-2"></div>
-          <div class="dot three-3"></div>
-        </div>
-        <div id="dice-one-side-four" class='side four'>
-          <div class="dot four-1"></div>
-          <div class="dot four-2"></div>
-          <div class="dot four-3"></div>
-          <div class="dot four-4"></div>
-        </div>
-        <div id="dice-one-side-five" class='side five'>
-          <div class="dot five-1"></div>
-          <div class="dot five-2"></div>
-          <div class="dot five-3"></div>
-          <div class="dot five-4"></div>
-          <div class="dot five-5"></div>
-        </div>
-        <div id="dice-one-side-six" class='side six'>
-          <div class="dot six-1"></div>
-          <div class="dot six-2"></div>
-          <div class="dot six-3"></div>
-          <div class="dot six-4"></div>
-          <div class="dot six-5"></div>
-          <div class="dot six-6"></div>
-        </div>
-      </div>
-   </div>
-    <div class="container">
-      <div id='dice2' class="dice dice-two">
-        <div id="dice-two-side-one" class='side one'>
-          <div class="dot one-1"></div>
-        </div>
-        <div id="dice-two-side-two" class='side two'>
-          <div class="dot two-1"></div>
-          <div class="dot two-2"></div>
-        </div>
-        <div id="dice-two-side-three" class='side three'>
-          <div class="dot three-1"></div>
-          <div class="dot three-2"></div>
-          <div class="dot three-3"></div>
-        </div>
-        <div id="dice-two-side-four" class='side four'>
-          <div class="dot four-1"></div>
-          <div class="dot four-2"></div>
-          <div class="dot four-3"></div>
-          <div class="dot four-4"></div>
-        </div>
-        <div id="dice-two-side-five" class='side five'>
-          <div class="dot five-1"></div>
-          <div class="dot five-2"></div>
-          <div class="dot five-3"></div>
-          <div class="dot five-4"></div>
-          <div class="dot five-5"></div>
-        </div>
-        <div id="dice-two-side-six" class='side six'>
-          <div class="dot six-1"></div>
-          <div class="dot six-2"></div>
-          <div class="dot six-3"></div>
-          <div class="dot six-4"></div>
-          <div class="dot six-5"></div>
-          <div class="dot six-6"></div>
-        </div>
-      </div> 
-   </div>
-   <div id='roll' class='roll-button'><button>Roll dice!</button></div>
-  </div>
-<!-- partial -->
-  <script  src="./script.js"></script>
 
+<!-- Loading Screen -->
+<div id="loader-wrapper">
+    <h1 class="loader-logo colored">A V G - T E A M</h1>
+    <div id="progress"></div>
+    <h3 class="loader-text">LOADING</h3>
+</div>
+<!-- Cookies Notification -->
+<div id="cookies">
+    <div class="cookies-bar">
+        <div class="cookies-wrapper">
+            <p>This website uses cookies. Please see our <a href="privacy_policy.html">Privacy Policy</a> for more
+                information.</p>
+        </div>
+        <button class="button" id="cookies-close">X</button>
+    </div>
+</div>
+<!-- //// HEADER //// -->
+<header id="main-header">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <div class="container">
+            <!-- Site Logo -->
+            <a id="main-logo" class="navbar-brand" href="#"><span class="colored">/</span>AVG Team<span class="colored">\</span></a>
+        </div>
+    </nav>
+</header>
+<!-- Header End -->
+
+<!-- /// HERO SECTION /// -->
+<section id="hero-section">
+    <div class="row hero-unit">
+        <div class="hero-overlay"></div>
+        <video autoplay loop muted poster="assets/images/poster.html" id="bgvid" class="img-fluid">
+            <source src="assets/videos/bg-vid.mp4" type="video/mp4"><!-- your video goes here -->
+        </video>
+        <div class="container">
+            <div class="hero-caption">
+                <!-- Main Tagline -->
+                <img src="assets/images/headline.png" class="img-fluid headline" alt="source code">
+                <a href="#cta" class="button">PLAY NOW</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Hero Section End -->
+
+
+<!-- /// CTA SECTION /// -->
+<section id="cta-section" class="full-width position-relative">
+    <a id="cta"></a>
+    <!-- Nav Anchor -->
+    <div class="container hidden">
+        <div class="row tiny-margin cta-card">
+            <div class="col-md-4 flex-md-column flex-sm-row" style="
+                display: flex;
+                justify-content: center;
+            ">
+                <img alt="bầucuatômcá" src="assets/images/baucuatomca.jpg" style="width: 80%;"
+                     class="img-fluid game-box animation-element slide-in-left">
+            </div>
+            <div class="col-md-4">
+                <h1>Bầu<br>Cua<br>Tôm<br>Cá</h1>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                <div>
+                    <a class="button" href="#">Play</a>
+                </div>
+                <div style="margin-left: 10px; margin-right: 10px;">
+                    <a class="button" href="#">Play With Plate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container position-absolute" style="top:0; right: 0;">
+        <!-- partial:game -->
+        <div class="game">
+            <div class="container-game">
+                <div id='dice1' class="dice dice-one">
+                    <div id="dice-one-side-one" class='side one'>
+                        <img src="assets/images/bau.png" alt="bầu" style="width:100%; margin-top:0.5rem;"
+                             data-roll-dice="gourd">
+                    </div>
+                    <div id="dice-one-side-two" class='side two'>
+                        <img src="assets/images/cua.png" alt="cua" style="width:100%; margin-top:0.5rem;"
+                             data-roll-dice="crab">
+                    </div>
+                    <div id="dice-one-side-three" class='side three'>
+                        <img src="assets/images/tom.png" alt="tôm" style="width:100%; margin-top:0.5rem;"
+                             data-roll-dice="shrimp">
+                    </div>
+                    <div id="dice-one-side-four" class='side four'>
+                        <img src="assets/images/ca.png" alt="cá" style="width:100%; margin-top:0.5rem;"
+                             data-roll-dice="fish">
+                    </div>
+                    <div id="dice-one-side-five" class='side five'>
+                        <img src="assets/images/ga.png" alt="gà" style="width:100%; margin-top:0.5rem;"
+                             data-roll-dice="rooster">
+                    </div>
+                    <div id="dice-one-side-six" class='side six'>
+                        <img src="assets/images/nai.png" alt="nai" style="width:100%; margin-top:0.5rem;"
+                             data-roll-dice="deer">
+                    </div>
+                </div>
+            </div>
+            <div class="container-game">
+                <div id='dice2' class="dice dice-two">
+                    <div id="dice-two-side-one" class='side one'>
+                        <img src="assets/images/bau.png" alt="bầu" style="width:100%; margin-top:0.5rem;"
+                             data-roll-dice="gourd">
+                    </div>
+                    <div id="dice-two-side-two" class='side two'>
+                        <img src="assets/images/cua.png" alt="cua" style="width:100%; margin-top:0.5rem;"
+                             data-roll-dice="crab">
+                    </div>
+                    <div id="dice-two-side-three" class='side three'>
+                        <img src="assets/images/tom.png" alt="tôm" style="width:100%; margin-top:0.5rem;"
+                             data-roll-dice="shrimp">
+                    </div>
+                    <div id="dice-two-side-four" class='side four'>
+                        <img src="assets/images/ca.png" alt="cá" style="width:100%; margin-top:0.5rem;"
+                             data-roll-dice="fish">
+                    </div>
+                    <div id="dice-two-side-five" class='side five'>
+                        <img src="assets/images/ga.png" alt="gà" style="width:100%; margin-top:0.5rem;"
+                             data-roll-dice="rooster">
+                    </div>
+                    <div id="dice-two-side-six" class='side six'>
+                        <img src="assets/images/nai.png" alt="nai" style="width:100%; margin-top:0.5rem;"
+                             data-roll-dice="deer">
+                    </div>
+                </div>
+            </div>
+            <div class="container-game">
+                <div id='dice3' class="dice dice-three">
+                    <div id="dice-three-side-one" class='side one'>
+                        <img src="assets/images/bau.png" alt="bầu" style="width:100%; margin-top:0.5rem;"
+                             data-roll-dice="gourd">
+                    </div>
+                    <div id="dice-three-side-two" class='side two'>
+                        <img src="assets/images/cua.png" alt="cua" style="width:100%; margin-top:0.5rem;"
+                             data-roll-dice="crab">
+                    </div>
+                    <div id="dice-three-side-three" class='side three'>
+                        <img src="assets/images/tom.png" alt="tôm" style="width:100%; margin-top:0.5rem;"
+                             data-roll-dice="shrimp">
+                    </div>
+                    <div id="dice-three-side-four" class='side four'>
+                        <img src="assets/images/ca.png" alt="cá" style="width:100%; margin-top:0.5rem;"
+                             data-roll-dice="fish">
+                    </div>
+                    <div id="dice-three-side-five" class='side five'>
+                        <img src="assets/images/ga.png" alt="gà" style="width:100%; margin-top:0.5rem;"
+                             data-roll-dice="rooster">
+                    </div>
+                    <div id="dice-three-side-six" class='side six'>
+                        <img src="assets/images/nai.png" alt="nai" style="width:100%; margin-top:0.5rem;"
+                             data-roll-dice="deer">
+                    </div>
+                </div>
+            </div>
+            <div id='roll' class='roll-button'>
+                <button class="button-roll">Roll dice!</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-additional"></div>
+</section>
+
+
+<section id="features-section">
+    <div class="container-fluid">
+        <a id="features"></a>
+        <!-- Nav anchor -->
+        <div class="row features text-center">
+            <div class="feature-card w-100" style="margin-bottom: 5%;">
+                <h2 class="short-hr-center">History</h2>
+                <p>Save your dice roll results</p>
+                <div id="table_history">
+                </div>
+                <div>
+                    <button class="button" id="delete_history">Delete History</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- /// FOOTER /// -->
+<div id="footer">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <a href="https://www.facebook.com/avg.team" target="_blank">
+                    <p id="copyright">&copy; AVG TEAM <span id="year"> </span> - TEAM OF HUTECH</p>
+                </a>
+                <!-- Copyright Text -->
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./script.js"></script>
+<!-- //// SCRIPTS //// -->
+<script src="js/jquery-3.4.0.min.js"></script>
+<script src="js/blazy.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/arsnl.js"></script>
 </body>
 </html>
