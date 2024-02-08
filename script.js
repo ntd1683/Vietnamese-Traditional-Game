@@ -7,6 +7,25 @@ const arrDice = {
     6: 'cua'
 }
 
+// Disable Devtools
+console.warn("Đừng mở nếu bạn muốn chơi vui vẻ!");
+console.warn("Don't open if you want to have fun!");
+document.addEventListener('keydown', function(event) {
+    if (event.keyCode === 123) { // F12
+        event.preventDefault();
+    }
+});
+
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+});
+
+document.addEventListener('keydown', function(event) {
+    if (event.ctrlKey && event.shiftKey && event.keyCode === 73) { // Ctrl + Shift + I
+        event.preventDefault();
+    }
+});
+
 function playRoll() {
     elContentRollDice.classList.remove("hidden");
     elRollAdd.classList.remove("hidden");
