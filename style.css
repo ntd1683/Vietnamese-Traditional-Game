@@ -7,9 +7,9 @@
 /*}*/
 
 .button-roll {
-    position: relative;
-    top: 80px;
-    left: 10px;
+    /*position: relative;*/
+    /*top: 80px;*/
+    /*left: 10px;*/
     padding: 15px 50px;
     color: #fff;
     background-color: #f4d35e;
@@ -28,20 +28,19 @@
     transform: translateY(15px);
 }
 
-.roll-button {
-    margin-left: 12rem;
-}
+/*.roll-button {*/
+/*    margin-left: 12rem;*/
+/*}*/
 
-.game {
-    position: relative;
-    width: auto;
-    height: 100%;
-}
+/*.game {*/
+/*    position: relative;*/
+/*    width: auto;*/
+/*    height: 100%;*/
+/*}*/
 
 .container-game {
     position: relative;
     display: block;
-    top: 200px;
 }
 
 .dice {
@@ -62,21 +61,21 @@
     box-shadow: inset 2px 2px #d90429;
 }
 
-.dice-one {
-    position: absolute;
-    right: 90px;
-}
+/*.dice-one {*/
+/*    position: absolute;*/
+/*    right: 90px;*/
+/*}*/
 
-.dice-two {
-    position: absolute;
-    left: 245px;
+/*.dice-two {*/
+/*    position: absolute;*/
+/*    left: 245px;*/
 
-}
+/*}*/
 
-.dice-three {
-    position: absolute;
-    left: -20px;
-}
+/*.dice-three {*/
+/*    position: absolute;*/
+/*    left: -20px;*/
+/*}*/
 
 .side {
     position: absolute;
@@ -176,7 +175,7 @@
     display: none;
 }
 
-.container-additional {
+#container_additional {
     height: 10rem;
 }
 
@@ -186,4 +185,24 @@
     font-weight: bold;
     width: 100%;
     text-align: center;
+}
+
+@media only screen and (max-width: 300px) {
+
+}
+
+@media only screen and (min-width: 301px) and (max-width: 700px) {
+
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1112px) {
+
+}
+
+@media only screen and (min-width: 1113px) and (max-width: 2001px) {
+
+}
+
+@media only screen and (min-width: 2002px) {
+
 }

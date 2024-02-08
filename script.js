@@ -1,3 +1,17 @@
+const arrDice = {
+    1: 'bầu',
+    2: 'gà',
+    3: 'nai',
+    4: 'tôm',
+    5: 'cá',
+    6: 'cua'
+}
+
+function playRoll() {
+    elContentRollDice.classList.remove("hidden");
+    elRollAdd.classList.remove("hidden");
+    elContent.classList.add("hidden");
+}
 function setCookie(cname, cvalue, exdays) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -56,23 +70,19 @@ function reloadHistory() {
 
 document.addEventListener('DOMContentLoaded', function () {
     reloadHistory();
+    elContent.classList.add("hidden");
+    // elContentRollDice.classList.add("hidden");
+    // elRollAdd.classList.add("hidden");
 });
 
-const arrDice = {
-    1: 'gourd',
-    2: 'chicken',
-    3: 'deer',
-    4: 'shrimp',
-    5: 'fish',
-    6: 'crab'
-}
-
-let elDiceOne = document.getElementById('dice1');
-let elDiceTwo = document.getElementById('dice2');
-let elDiceThree = document.getElementById('dice3');
-let elComeOut = document.getElementById('roll');
-let elDeleteHistory = document.getElementById('delete_history');
-console.log(elDeleteHistory);
+const elDiceOne = document.getElementById('dice1');
+const elDiceTwo = document.getElementById('dice2');
+const elDiceThree = document.getElementById('dice3');
+const elComeOut = document.getElementById('roll');
+const elDeleteHistory = document.getElementById('delete_history');
+const elContent = document.getElementById('container_content');
+const elContentRollDice = document.getElementById('container_roll_dice');
+const elRollAdd = document.getElementById('container_additional');
 
 elComeOut.onclick = async function () {
     let result = await rollDiceNumTimes(10);
@@ -91,8 +101,13 @@ elComeOut.onclick = async function () {
 };
 
 elDeleteHistory.addEventListener("click", () => {
+    let confirm = window.confirm("Bạn có chắc chắn muốn xóa lịch sử không?");
+
+    if (!confirm) return;
+
     removeCookie('history');
     reloadHistory();
+    alert("Xóa lịch sử thành công!");
 });
 
 async function rollDiceNumTimes(num) {
@@ -129,5 +144,5 @@ function rollDice() {
         }
     }
 
-    return [diceThree, diceTwo, diceOne];
+    return [diceOne, diceTwo, diceThree];
 }
